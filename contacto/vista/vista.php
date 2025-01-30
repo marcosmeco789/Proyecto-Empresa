@@ -25,7 +25,7 @@
                     <th>Correo</th>
                     <th>Teléfono</th>
                     <th>Pregunta</th>
-                    <th>Editar</th>
+                    <th>Contactar</th>
                     <th>Eliminar</th>
                 </tr>
             </thead>
@@ -40,7 +40,9 @@
                             <td><?php echo $datos[$i]['correo']; ?></td>
                             <td><?php echo $datos[$i]['telefono']; ?></td>
                             <td><?php echo $datos[$i]['pregunta']; ?></td>
-                            <td><a href="../controlador/editar.php?id=<?php echo $datos[$i]['id']; ?>" class="btn btn-warning">Editar</a></td>
+                            <td class="text-center">
+                                <a href="mailto:<?php echo $datos[$i]['correo']; ?>" class="btn btn-primary">Contactar</a>
+                            </td>
                             <td><a href="../controlador/borrar.php?id=<?php echo $datos[$i]['id']; ?>" class="btn btn-danger">Borrar</a></td>
                         </tr>
                 <?php
