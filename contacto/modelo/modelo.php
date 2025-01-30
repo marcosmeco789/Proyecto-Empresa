@@ -34,12 +34,6 @@ class Consulta
         return $this->consultas;
     }
 
-    public function actualizarConsulta($id, $nombre, $correo, $telefono, $pregunta) {
-        $sql = "UPDATE consultas SET nombre = '{$nombre}', correo = '{$correo}', telefono = '{$telefono}', pregunta = '{$pregunta}' WHERE id = '{$id}'";
-        $resultado = $this->dbc->query($sql);
-        return $resultado;
-    }
-
     public function eliminarConsulta($id) {
         $sql = "DELETE FROM consultas WHERE id = '{$id}'";
         $resultado = $this->dbc->query($sql);

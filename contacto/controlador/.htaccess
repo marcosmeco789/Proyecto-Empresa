@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Zona Protegida"
+AuthUserFile C:\Users\Marcos\.htpasswd
+Require valid-user
